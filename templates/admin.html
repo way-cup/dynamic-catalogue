@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Admin Page</h1>
+    </header>
+    <main>
+        <form id="productForm">
+            <h2>Add/Update Products</h2>
+            <div id="productList">
+                <!-- Existing products will be loaded here -->
+            </div>
+            <button type="button" id="addProduct">Add Product</button>
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+    <script src="{{ url_for('static', filename='admin.js') }}"></script>
+</body>
+</html>
